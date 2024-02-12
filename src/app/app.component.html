@@ -1,0 +1,18 @@
+<div class="container">
+  <div class="row mt-5">
+    <div class="col-md-6">
+      <div class="form-group">
+        <label for="">Enter your Skill</label>
+        <input type="text" class="form-control" #todoItem>
+        <button class="btn btn-primary mt-3" (click)="onAddSkill(todoItem)">Add Skill</button>
+      </div>
+    </div>
+    <div class="col-md-6">
+      <ul class="list-group">
+        <li class="list-group-item" *ngFor="let skill of items">
+          {{skill}}
+        </li>
+      </ul>
+    </div>
+  </div>
+</div>
